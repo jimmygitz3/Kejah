@@ -40,13 +40,22 @@ npm run install-all
 
 ### Backend Environment Variables
 
-Create `backend/.env`:
+The backend already has a `.env` file created. You can modify it if needed:
+
+**Location**: `backend/.env`
+
 ```env
 MONGODB_URI=mongodb://localhost:27017/kejah
-JWT_SECRET=your_secret_key_here
+JWT_SECRET=kejah_secret_key_change_in_production
 PORT=5000
 NODE_ENV=development
 FRONTEND_URL=http://localhost:3000
+PAYMENT_MODE=demo
+```
+
+**For MongoDB Atlas** (cloud database), change MONGODB_URI to:
+```env
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/kejah
 ```
 
 ### Frontend Environment Variables
