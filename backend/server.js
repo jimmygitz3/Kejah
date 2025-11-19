@@ -51,7 +51,7 @@ const connectToDatabase = async () => {
   }
 
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/kejah', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Kejah:K3j@h@cluster0.obftxt9.mongodb.net/?appName=Cluster0', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -71,13 +71,8 @@ const connectToDatabase = async () => {
 // Connect to database
 connectToDatabase();
 
-// For Vercel serverless functions
-if (process.env.NODE_ENV === 'production') {
-  module.exports = app;
-} else {
-  // For local development
-  const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => {
-    console.log(`🚀 Kejah Server running on port ${PORT}`);
-  });
-}
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`🚀 Kejah Server running on port ${PORT}`);
+});

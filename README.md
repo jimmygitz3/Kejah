@@ -157,27 +157,27 @@ This project is licensed under the MIT License.
 
 ## Deployment
 
-### Quick Deployment to Vercel
+### Backend Deployment
+Deploy to any Node.js hosting service:
+- **Heroku**: `git push heroku main`
+- **Railway**: Connect GitHub repo
+- **DigitalOcean**: Deploy as Node.js app
+- **AWS/Azure**: Use their Node.js services
 
-1. **Prerequisites:**
-   - Vercel account
-   - MongoDB Atlas database
-   - GitHub repository
+**Requirements:**
+- Node.js 14+
+- MongoDB database (local or Atlas)
+- Environment variables configured
 
-2. **Deploy Backend:**
-   ```bash
-   # Create new Vercel project with root directory: backend
-   # Add environment variables: MONGODB_URI, JWT_SECRET, NODE_ENV=production
-   ```
+### Frontend Deployment
+Deploy to any static hosting:
+- **Netlify**: Drag & drop `build` folder
+- **Vercel**: Connect GitHub repo
+- **GitHub Pages**: Use `gh-pages` package
+- **Any CDN**: Upload `build` folder
 
-3. **Deploy Frontend:**
-   ```bash
-   # Create new Vercel project with root directory: frontend  
-   # Add environment variable: REACT_APP_API_URL=your_backend_url
-   ```
-
-4. **Detailed Instructions:**
-   See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for complete deployment instructions.
+**Build command:** `npm run build`
+**Output directory:** `build`
 
 ## Support
 

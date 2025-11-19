@@ -94,8 +94,8 @@ Welcome to the Kejah project documentation! This index will help you find the ri
 
 ### "I need to deploy this"
 1. Review [QUICK_START.md](QUICK_START.md) for local setup
-2. Check backend/vercel.json for deployment config
-3. Deploy backend and frontend separately to Vercel
+2. Check deployment section in [QUICK_START.md](QUICK_START.md#deployment)
+3. Deploy backend to Node.js hosting and frontend to static hosting
 
 ### "I need to add a new feature"
 1. Review [STRUCTURE.md](STRUCTURE.md)
@@ -144,7 +144,7 @@ README.md (Overview)
 → [CHANGES.md](CHANGES.md)
 
 ### Deployment Info
-→ See backend/vercel.json and QUICK_START.md
+→ See QUICK_START.md deployment section
 
 ---
 
@@ -176,7 +176,7 @@ README.md (Overview)
 
 ### For Deployment
 - [Environment Setup](QUICK_START.md#environment-configuration)
-- [Vercel Config](backend/vercel.json)
+- [Deployment Guide](QUICK_START.md#deployment)
 - [Quick Start](QUICK_START.md)
 
 ---
@@ -185,7 +185,7 @@ README.md (Overview)
 
 1. **New to the project?** Start with README.md → QUICK_START.md
 2. **Reviewing changes?** Start with BEFORE_AFTER.md
-3. **Deploying?** Start with QUICK_START.md deployment section
+3. **Deploying?** Check QUICK_START.md deployment section
 4. **Adding features?** Reference STRUCTURE.md
 5. **Troubleshooting?** Check QUICK_START.md common issues
 

@@ -235,17 +235,20 @@ npm install
 
 ## Deployment
 
-See `DEPLOYMENT_GUIDE.md` for detailed deployment instructions to Vercel.
-
-Quick deploy:
+### Backend Deployment
+Deploy to any Node.js hosting service (Heroku, Railway, DigitalOcean, AWS, etc.):
 ```bash
-# Deploy backend
-cd backend
-vercel
+# Build command: npm install
+# Start command: npm run server
+# Port: 5000 (or from environment variable)
+```
 
-# Deploy frontend
+### Frontend Deployment
+Deploy to any static hosting service (Netlify, Vercel, GitHub Pages, etc.):
+```bash
 cd frontend
-vercel
+npm run build
+# Deploy the 'build' folder
 ```
 
 ## Support

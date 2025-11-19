@@ -29,9 +29,7 @@ All backend files are in the root `backend/` directory with clear naming convent
 - `listingCleanup.util.js` - Automated listing cleanup scheduler
 
 ### Core Files
-- `server.js` - Express server configuration
-- `index.js` - Entry point for serverless deployment (Vercel)
-- `vercel.json` - Vercel deployment configuration
+- `server.js` - Express server configuration and entry point
 
 ## Frontend Structure (Organized)
 
@@ -69,7 +67,7 @@ frontend/src/
 1. **Easy Navigation** - All files in one directory
 2. **Clear Naming** - File purpose obvious from name
 3. **Deployment Friendly** - No complex path resolution
-4. **Vercel Compatible** - Simplified serverless deployment
+4. **Simple Deployment** - Standard Node.js server
 5. **Maintenance** - Quick file location and updates
 
 ### Frontend (Organized)
@@ -113,15 +111,15 @@ import { kenyanCounties } from './data/kenyanLocations';
 
 ## Deployment Configuration
 
-### Backend (Vercel)
-- Entry point: `backend/index.js`
-- Serverless function: Exports Express app
-- Configuration: `backend/vercel.json`
+### Backend
+- Entry point: `backend/server.js`
+- Standard Node.js Express server
+- Environment variables in `backend/.env`
 
-### Frontend (Vercel)
+### Frontend
 - Build command: `npm run build`
 - Output directory: `build`
-- Configuration: `vercel.json` (root)
+- Static files ready for any hosting service
 
 ## Migration Notes
 
